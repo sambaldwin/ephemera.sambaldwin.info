@@ -2,6 +2,7 @@ html {
   --h1: 1.333rem;
   --h2: 1rem;
   --h3: .75rem;
+  --width-text: 37.5rem;
 }
 
 body {
@@ -35,6 +36,8 @@ h4,
 h5,
 h6 {
   font-size: inherit;
+  margin-top: 2em;
+  margin-bottom: 1em;
 }
 
 p {
@@ -58,6 +61,20 @@ a {
 .site-header a {
   text-decoration-thickness: 0.0625rem;
   text-underline-offset: 0.3em;
+}
+
+.site-title {
+  margin: 0;
+}
+
+.site-main,
+.site-footer {
+  margin-bottom: 3rem;
+}
+
+.site-footer {
+  font-size: var(--h3);
+  max-width: var(--width-text);
 }
 
 .posts {
@@ -84,6 +101,7 @@ a {
 
 .page__title {
   font-size: var(--h1);
+  margin: 0;
 }
 
 .page__images {
@@ -92,7 +110,7 @@ a {
 }
 
 .page__text {
-  max-width: 37.5rem;
+  max-width: var(--width-text);
 }
 
 .page__footer {
