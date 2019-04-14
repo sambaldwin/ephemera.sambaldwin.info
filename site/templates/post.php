@@ -18,7 +18,7 @@
       <?php endforeach ?>
       </div>
     <?php endif ?>
-    <?php if ($page->images()->isNotEmpty()) : ?>
+    <?php if ($page->text()->isNotEmpty()) : ?>
       <div class="page__text">
         <?= $page->text()->kirbytext() ?>
       </div>
