@@ -1,0 +1,68 @@
+body {
+  font-family: "Standard", sans-serif;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: currentColor;
+}
+
+.site-header {
+  align-items: baseline;
+  display: flex;
+  font-weight: 700;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+
+.posts {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+@media (min-width: 37.5em) {
+  .posts {
+    grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  }
+}
+
+.post,
+.post__link {
+  display: contents;
+}
+
+@font-face {
+  font-family: "Standard";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/standard-book-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Standard";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/standard-book-italic-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Standard";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/standard-bold-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Standard";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/standard-bold-italic-webfont.woff2") format("woff2");
+}
