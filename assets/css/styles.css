@@ -1,14 +1,45 @@
+html {
+  --h1: 1.333rem;
+  --h2: 1rem;
+  --h3: .75rem;
+}
+
 body {
+  color: #222;
   font-family: "Standard", sans-serif;
+  font-size: var(--h2);
+  line-height: 1.4;
+  margin: 0;
+  padding: 0 2.5vw;
 }
 
 figure {
   margin: 0;
 }
 
+figcaption {
+  font-size: var(--h3);
+  margin-top: .25rem;
+}
+
 img {
   display: block;
+  height: auto;
   max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1em;
 }
 
 a {
@@ -21,16 +52,57 @@ a {
   font-weight: 700;
   justify-content: space-between;
   margin-bottom: 5rem;
+  padding-top: 1rem;
+}
+
+.site-header a {
+  text-decoration-thickness: 0.0625rem;
+  text-underline-offset: 0.3em;
 }
 
 .posts {
   display: grid;
-  grid-gap: 1rem;
+  grid-gap: .5rem;
 }
 
 @media (min-width: 37.5em) {
   .posts {
-    grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  }
+}
+
+.page > *,
+.page__main > * {
+  margin-bottom: 2rem;
+}
+
+.page__header {
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page__title {
+  font-size: var(--h1);
+}
+
+.page__images {
+  display: grid;
+  grid-gap: .5rem;
+}
+
+.page__text {
+  max-width: 37.5rem;
+}
+
+.page__footer {
+  font-size: var(--h3);
+}
+
+
+@media (min-width: 37.5em) {
+  .page__images {
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
   }
 }
 
@@ -65,4 +137,8 @@ a {
   font-style: italic;
   font-weight: 700;
   src: url("../fonts/standard-bold-italic-webfont.woff2") format("woff2");
+}
+
+.unset {
+  all: unset;
 }
