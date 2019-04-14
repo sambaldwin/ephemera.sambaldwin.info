@@ -1,0 +1,12 @@
+Title: Projects
+
+options:
+  changeTemplate: false
+  delete: false
+  status: false
+
+sections:
+  projects:
+    headline: Projects
+    template: project
+    type: pages

@@ -1,0 +1,12 @@
+Title: Posts
+
+options:
+  changeTemplate: false
+  delete: false
+  status: false
+
+sections:
+  projects:
+    headline: Posts
+    template: post
+    type: pages

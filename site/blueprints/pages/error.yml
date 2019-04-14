@@ -1,0 +1,12 @@
+title: Error
+
+columns:
+  - width: 2/3
+    sections:
+      content:
+        type: fields
+        fields:
+          text:
+            headline: Text
+            type: textarea
+            size: large

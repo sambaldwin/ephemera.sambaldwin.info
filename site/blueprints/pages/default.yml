@@ -1,0 +1,24 @@
+title: Page
+
+columns:
+  - width: 2/3
+    sections:
+      content:
+        type: fields
+        fields:
+          text:
+            headline: Text
+            type: textarea
+            size: large
+      media:
+        type: files
+        headline: Media
+        empty: "No media yet"
+        layout: cards
+        template: media
+  - width: 1/3
+    sections:
+      pages:
+        headline: Pages
+        type: pages
+

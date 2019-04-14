@@ -1,0 +1,30 @@
+title: Media
+
+accept: image/jpeg, image/png, image/gif, video/mp4
+
+columns:
+  - width: 1/2
+    sections:
+      content:
+        type: fields
+        fields:
+          caption:
+            label: Caption
+            type: textarea
+            size: small
+            buttons:
+              - bold
+              - italic
+              - code
+              - link
+              - email
+  - width: 1/2
+    sections:
+      meta:
+        type: fields
+        fields:
+          alt:
+            label: Alt Text
+            type: textarea
+            buttons: false
+            size: small

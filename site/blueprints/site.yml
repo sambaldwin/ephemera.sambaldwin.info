@@ -1,0 +1,14 @@
+title: Site
+
+options:
+  changeTitle: false
+
+columns:
+  - width: 1/3
+    sections:
+      contents:
+        headline: Contents
+        help: All listed entries are displayed in the menu.
+        type: pages
+        create: page
+        parent: site
