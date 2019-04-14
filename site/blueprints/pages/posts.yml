@@ -3,7 +3,7 @@ Title: Posts
 options:
   changeTemplate: false
   delete: false
-  status: false
+  status: true
 
 sections:
   posts:
