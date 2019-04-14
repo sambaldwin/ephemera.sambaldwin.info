@@ -6,7 +6,7 @@ options:
   status: false
 
 sections:
-  projects:
+  posts:
     headline: Posts
     template: post
     type: pages
