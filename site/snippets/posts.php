@@ -6,9 +6,6 @@
           <?php foreach ($post->images() as $image) : ?>
             <figure>
               <?= $image ?>
-              <?php if ($image->caption()->isNotEmpty()) : ?>
-                <figcaption><?= $image->caption()->kirbytextinline() ?></figcaption>
-              <?php endif; ?>
             </figure>
           <?php endforeach ?>
         </a>
