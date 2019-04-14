@@ -1,22 +1,30 @@
 title: Post
 
-sections:
-  content:
-    type: fields
-    fields:
-      datePosted:
-        type: date
-        label: Date posted
-        time: true
-        default: now
-      text:
-        headline: Text
-        type: textarea
-        size: large
-  media:
-    type: files
-    headline: Media
-    empty: "No media yet"
-    layout: cards
-    template: media
-
+columns:
+  left:
+    width: 2/3
+    sections:
+      media:
+        type: files
+        headline: Media
+        empty: "No media yet"
+        layout: cards
+        template: media
+        image:
+          ratio: 85/117
+          cover: false
+  right:
+    width: 1/3
+    sections:
+      content:
+        type: fields
+        fields:
+          datePosted:
+            type: date
+            label: Date posted
+            time: true
+            default: now
+          text:
+            headline: Text
+            type: textarea
+            size: large
