@@ -10,3 +10,5 @@ sections:
     headline: Posts
     template: post
     type: pages
+    info: "{{ page.datePosted.toDate('d.m.Y') }}"
+    sortBy: datePosted desc
