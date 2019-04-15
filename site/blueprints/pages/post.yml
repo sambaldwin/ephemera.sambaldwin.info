@@ -26,6 +26,9 @@ columns:
             label: Date posted
             time: true
             default: now
+          tags:
+            label: Tags
+            type: tags
           text:
             headline: Text
             type: textarea
