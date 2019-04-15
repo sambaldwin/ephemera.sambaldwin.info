@@ -1,5 +1,7 @@
 title: Post
 
+num: '{{ page.datePosted.toDate("YmdHi") }}'
+
 columns:
   left:
     width: 2/3
